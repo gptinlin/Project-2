@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Project-2</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 
@@ -11,21 +11,32 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="container">
+   <div class="container sm:text-center">
         <div class="jumbotron">
-            <a class="active" href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <span class="font-bold text-xl tracking-tight">GIFHY Search API</span>
+            <br></br>
+            <div class="text-sm lg:flex-grow">
+                <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white-200 hover:text-white mr-4">
+                Search
+                </a>
+                <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white-200 hover:text-white mr-4">
+                About
+                </a>
+                <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-white-200 hover:text-white">
+                Contact Us
+                </a>
+            </div>
           </div>
       </div>
-    
-      <br></br>
-      <br></br>
-      <br></br>
-    <input type='text' id='search-field' style="border: 1px solid"/>
+
+        
+    <br></br>
+    <br></br>
+    <br></br>
+    <input type='text' id='search-field' style="border: 1px solid" />
     <button id='search-button'>Search</button>
 
-    <div id='search-results' class="grid grid-cols-12 gap-4 bg-gray-100">
+    <div id='search-results' class="grid grid-cols-12 gap-4 bg-gray-100 col-span-12 sm:col-span-6 md:col-span-4">
 
     </div>
 
@@ -33,14 +44,14 @@
     <br />
     <br />
 
-    <div class="grid grid-cols-12 gap-2 bg-gray-100">
-      <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 col-span-12 sm:col-span-6 md:col-span-4">1</div>
-      <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 col-span-12 sm:col-span-6 md:col-span-4">2</div>
-      <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 col-span-12 sm:col-span-6 md:col-span-4">3</div>
-      <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 col-span-12 sm:col-span-6 md:col-span-4">4</div>
-      <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 col-span-12 sm:col-span-6 md:col-span-4">5</div>
-      <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 col-span-12 sm:col-span-6 md:col-span-4">6</div>
-    </div>
+    <!-- <div class="grid grid-cols-12 gap-2 bg-gray-100">
+      <div class="text-gray-700 text-center col-span-12 sm:col-span-6 md:col-span-4">1</div>
+      <div class="text-gray-700 text-center col-span-12 sm:col-span-6 md:col-span-4">2</div>
+      <div class="text-gray-700 text-center col-span-12 sm:col-span-6 md:col-span-4">3</div>
+      <div class="text-gray-700 text-center col-span-12 sm:col-span-6 md:col-span-4">4</div>
+      <div class="text-gray-700 text-center col-span-12 sm:col-span-6 md:col-span-4">5</div>
+      <div class="text-gray-700 text-center col-span-12 sm:col-span-6 md:col-span-4">6</div>
+    </div> -->
 
     
   </body>
