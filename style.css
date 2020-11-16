@@ -1,3 +1,12 @@
 #fetch-from-api {
     background-color: blue;
 }
+.jumbotron {
+    padding: 50px;
+    background-color: rgb(27, 27, 46);
+    color: rgb(252, 252, 252);
+    text-align: left;
+}
+#fetch-from-api {
+    text-align: center;
+}
