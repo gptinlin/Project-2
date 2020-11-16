@@ -17,6 +17,9 @@
 
 
         </div>
+        <div id="first-result-image">
+
+        </div>
 
 
 
@@ -28,10 +31,21 @@
             console.log( "ready!" );
             $('#fetch-from-api').on('click', () => {
                 console.log('I was clicked');
-            $.get('https://api.giphy.com/v1/gifs/search?api-key=bu2jBN3FbA4qjHRnUR5hglMKejHnNNCRq=testing',
+            $.get('https://api.giphy.com/v1/gifs/search?api-key=bu2jBN3FbA4qjHRnUR5hglMKejHnNNCRq=japan&limit=30',
                 function(giphyResponse) {
                     console.log(gifhyResponse);
                     console.log('gifhyData', gifhyResponse.data)
+                    console.log('gifhyData result 0 (1st result)', gifhyResponse.data[0]);
+                    console.log('gifhyData result 0 (1st result) - all image list',
+                     gifhyResponse.data[0].images);
+                    console.log('gifhyData result 0 (1st result) - all image list - original image' ,
+                     gifhyResponse.data[0].images.original);
+                    console.log('gifhyData result 0 (1st result) - all image list - original image - url' ,
+                     gifhyResponse.data[0].images.original.url);
+                    for (let  image of gifhyResponse.data) {
+                        console.log(image);
+                        let imgHtml = <img src="${gifhyRepsonse.data[0].images.original.url}" />
+                        $('#first-result-image').html('imgHtml');}
                 //$( ".result" ).html( data );
                 //alert( "Load was performed." );
               });
