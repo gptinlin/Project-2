@@ -3,39 +3,47 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Project-2</title>
+    <title>repl.it</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-
     <script src="main.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    
   </head>
   <body>
-      <div class="container">
+    <div class="container">
         <div class="jumbotron">
             <a class="active" href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
           </div>
       </div>
+    
+      <br></br>
+      <br></br>
+      <br></br>
+    <input type='text' id='search-field' style="border: 1px solid"/>
+    <button id='search-button'>Search</button>
 
-
-    <input type="text" id="search-field">
-    <button id="search-button">Search</button>
-    <div id="search-results">
+    <div id='search-results' class="grid grid-cols-12 gap-4 bg-gray-100">
 
     </div>
 
+    <br />
+    <br />
+    <br />
 
-    
-    <h1>REST API</h1>
+    <div class="grid grid-cols-12 gap-2 bg-gray-100">
+      <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 col-span-12 sm:col-span-6 md:col-span-4 ">1</div>
+      <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 col-span-12 sm:col-span-6 md:col-span-4">2</div>
+      <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 col-span-12 sm:col-span-6 md:col-span-4">3</div>
 
-
-   
-
-
-
-
+      <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 col-span-12 sm:col-span-6 md:col-span-4">3</div>
+      <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 col-span-12 sm:col-span-6 md:col-span-4">3</div>
+      <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 col-span-12 sm:col-span-6 md:col-span-4">3</div>
+      <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 col-span-12 sm:col-span-6 md:col-span-4">3</div>
+      <div class="text-gray-700 text-center bg-gray-400 px-4 py-2 m-2 col-span-12 sm:col-span-6 md:col-span-4">3</div>
+    </div>
 
     
   </body>
