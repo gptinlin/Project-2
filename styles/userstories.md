@@ -1,0 +1,3 @@
+For this project we need to create 2 user stories.
+1. As a manager for a restuarant, I want to convey my message to my employees that I want them to clock in on time, I will search for a gif that shows a person arriving 5 minutes before their shift starts but I want to keep it light harded by using a gif in the email.
+2. As a math teacher in middle school, I want to upload a gif to the online homework that shows how fun and confusing math can be to my students, using this site will get the results you want by searching "math" and looking for the gif to show my students that I know how it feels to not get the problems at first.
