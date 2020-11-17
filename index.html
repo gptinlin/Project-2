@@ -11,7 +11,7 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-   <div class="container">
+   <div>
         <div class="jumbotron">
             <span class="font-bold text-xl tracking-tight">GIFHY Search API</span>
             <br></br>
@@ -31,10 +31,14 @@
  
     <br></br>
     <br></br>
-    <input type='text' id='search-field' style="border: 1px solid" />
-    <button id="search-button" class="border 1px solid">Search</button>
-
-    <div id='search-results' class="grid grid-cols-12 gap-4 bg-gray-100 col-span-12 sm:col-span-6 md:col-span-4">
+    <div class="text-center">
+        <input type='text' id='search-field' style="border: 1px solid" />
+        <br></br>
+        <button id="search-button" class="border 1px solid">Search</button>
+    </div>
+      <br></br>
+      <br></br>
+    <div id='search-results' class="grid grid-cols-12 gap-2 col-span-12 sm:col-span-6 md:col-span-4">
 
     </div>
 
